@@ -1,0 +1,136 @@
+:root {
+--PaleBlue: hsl(225, 100%, 94%);
+--BrightBlue: hsl(245, 75%, 52%);
+--VeryPaleBlue: hsl(225, 100%, 98%);
+--DesaturatedBlue: hsl(224, 23%, 55%);
+--DarkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Red Hat Family", sans-serif;
+}
+
+body {
+    background: var(--PaleBlue);
+}
+
+button {
+    font-family: inherit;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 25px 25px rgba(0,0,255,0.1);
+    height: 90vh;
+}
+
+.hero {
+    width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 0;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background: var(--VeryPaleBlue);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.left-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.five {
+    font-weight: 500;
+}
+
+.seven {
+    font-weight: 700;
+}
+
+.paragraph {
+    max-width: 35ch;
+    margin: 20px 0;
+    color: var(--DesaturatedBlue);
+    font-weight: 500;
+}
+
+.pay-button {
+    color: #fff;
+    background: var(--BrightBlue);
+    padding: 20px 65px;
+    border-radius: 10px;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    box-shadow: 0 10px 10px rgba(0,0,255,0.2);
+}
+
+.cancel {
+    padding: 20px;
+}
+
+.text {
+    margin: 25px 50px;
+}
+
+.link {
+    color: var(--BrightBlue);
+}
+
+.lite-font {
+    color: var(--DesaturatedBlue);
+}
+
+.hover {
+    cursor: pointer;
+}
+
+@media (min-width: 768px){
+
+    body {
+        background: no-repeat url(images/pattern-background-desktop.svg) top;
+        background-size: contain;
+        background-color: var(--PaleBlue);
+        min-height: 100vh;
+    }
+
+    .cancel {
+        padding: 20px 75px;
+    }
+
+    .text {
+        margin: 50px 100px;
+    }
+    
+    .pay-button {
+        padding: 20px 75px;
+    } 
+}
+
+@media (max-width: 360px){
+
+    .text {
+        margin: 10px;
+    }
+
+}
